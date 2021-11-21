@@ -1,9 +1,15 @@
 import React from "react";
-import logo from './logo.svg';
 
-const Header = () =>{
+const Header = () => {
     return (
-        <div>Menu</div>
+        <div className="Menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Мои задачи</a></li>
+                <li><a href="#">Пользователи</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </div>
 
     )
 }

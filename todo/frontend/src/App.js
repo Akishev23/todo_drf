@@ -28,12 +28,14 @@ class App extends React.Component {
                 <div className="App-header">
                     <Header/>
                 </div>
+                <body>
                 <div className="main">
                     <UserList users={this.state.users}/>
                 </div>
                 <div className="App-footer">
                     <Footer/>
                 </div>
+                </body>
             </div>
         )
     }

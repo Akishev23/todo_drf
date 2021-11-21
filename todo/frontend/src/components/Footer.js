@@ -1,9 +1,11 @@
 import React from "react";
 
 
-const Footer = () =>{
+const Footer = () => {
     return (
-        <span>Geekbrains 2021 (c)</span>
+        <footer className="Footer">
+            <span className="Footer">Geekbrains 2021 (c)</span>
+        </footer>
     )
 }
 
