@@ -5,14 +5,14 @@ from django.db import models
 from users.models import Users
 
 
-class Project:
+class Project(models.Model):
     name = models.CharField(max_length=50, unique=True)
     rep_url = models.URLField(max_length=256, blank=True)
     users = models.ManyToManyField(Users)
 
 
-class ToDo:
-    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+class ToDo(models.Model):
+    project = models.OneToOneField(Project, on_delete=models.CASCADE)
     text = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)

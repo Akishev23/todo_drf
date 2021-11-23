@@ -1,3 +1,4 @@
+from rest_framework.relations import PrimaryKeyRelatedField
 from rest_framework.serializers import HyperlinkedModelSerializer
 from .models import Users
 
